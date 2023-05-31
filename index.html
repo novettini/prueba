@@ -36,11 +36,11 @@
     <h1>Pizzería</h1>
     
     <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="nombre" id="nomb">Nombre:</label>
+        <input type="text" id="nombre" class="distinto" name="nombre" required><br>
         
         <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion" required><br>
+        <input type="text" id="direccion"  class="distinto" name="direccion" required><br>
         
         <label>Productos:</label><br>
         <input type="checkbox" id="producto1" name="producto" value="pizzaMuzzarella">
@@ -169,8 +169,7 @@
         <input type="number" id="cantidad-" min="1" value=""><br> -->
         
         
-        <input type="button" value="Enviar pedido por WhatsApp" onclick="enviarPedido()">
+        <input type="button" value="Enviar pedido por WhatsApp"  class="distinto" onclick="enviarPedido()">
     </form>
 </body>
 </html>
-
