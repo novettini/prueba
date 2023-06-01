@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Pizzería</title>
-    
+
 </head>
 
 <body>
@@ -34,7 +34,7 @@
     </div>
     <div id="wrapper">
         <form>
-           <input type="checkbox" id="producto1" name="producto" value="pizza Muzzarella">
+            <input type="checkbox" id="producto1" name="producto" value="pizza Muzzarella">
             <label for="producto1">Muzzarella $2000</label>
             <input type="number" id="cantidad-pizza Muzzarella" min="1" value="">
             <p id="coment">(Salsa de tomate, muzzarella, aceitunas)</p>
@@ -107,11 +107,11 @@
             <input type="checkbox" id="producto15" name="producto" value="pizza Palmitos">
             <label for="producto15">Palmitos $3000</label>
             <input type="number" id="cantidad-pizza Palmitos" min="1" value="">
-            <p id="coment"> (Salsa de tomate, muzzarella, palmitos, salsa golf, aceitunas negras)</plabel>
+            <p id="coment"> (Salsa de tomate, muzzarella, palmitos, salsa golf, aceitunas negras)</p>
 
-                <input type="checkbox" id="producto16" name="producto" value="pizza Provolone">
-                <label for="producto16">Provolone $3000</label>
-                <input type="number" id="cantidad-pizza Provolone" min="1" value="">
+            <input type="checkbox" id="producto16" name="producto" value="pizza Provolone">
+            <label for="producto16">Provolone $3000</label>
+            <input type="number" id="cantidad-pizza Provolone" min="1" value="">
             <p id="coment"> (Salsa de tomate, muzzarella, provolone, oregano, aceitunas negras)</p>
 
             <input type="checkbox" id="producto17" name="producto" value="pizza Cuatro quesos">
@@ -143,7 +143,7 @@
             <p id="coment"> (Cebolla, oregano)</p>
 
             <input type="checkbox" id="producto22" name="producto" value="pizza Fugazzeta">
-            <label for="producto22">Fugazzeta $3000</label>
+            <label for="producto22">Fugazzeta</label>
             <input type="number" id="cantidad-pizza Fugazzeta" min="1" value="">
             <p id="coment"> (Salsa de tomate, muzzarella, jamón, aceitunas)</p>
 
@@ -217,11 +217,11 @@
             <p id="coment"> (Muzzarella y boquerones de anchoa ahumados)</p>
 
 
-            <label for="nombre" id="name" required>Nombre:</label>
+            <label for="nombre" id="name" required>Nombre: </label>
             <input type="text" id="nombre" class="info" name="nombre" required><br>
-        
+
             <label for="direccion" id="adress">Dirección:</label>
-            <input type="text" id="direccion"  class="info" name="direccion" required><br>    
+            <input type="text" id="direccion" class="info" name="direccion" required><br>
             <input type="button" value="Enviar pedido" class="distinto" onclick="enviarPedido()">
     </div>
     <nav id="footer" class="navbar bg-dark fixed-bottom" data-bs-theme="dark"><a
@@ -234,7 +234,7 @@
             var nombre = document.getElementById('nombre').value;
             var direccion = document.getElementById('direccion').value;
             var productos = document.querySelectorAll('input[name="producto"]');
-            var mensaje = "Hola, soy "+ nombre + "de "+ direccion+ "quiero realizar un pedido:";
+            var mensaje = "Hola, soy " + nombre + "de " + direccion + "quiero realizar un pedido:";
 
             // Recorrer los productos seleccionados y sus cantidades
             for (var i = 0; i < productos.length; i++) {
