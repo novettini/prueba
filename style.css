@@ -2,6 +2,10 @@ input{
     width: 8%;
     height: 4%;
  }
+ input, textarea, submit { -webkit-appearance: none; }
+
+ #checkbox1 { -webkit-appearance: checkbox; }
+
  #direccion{
   margin-bottom: 2%;
  }
@@ -122,8 +126,8 @@ hr{
       margin-right: 10%;
     }
     body{
-      zoom: 80%;
       width: 100%;
+      zoom: 80%;
     }
     #logoArriba{
       padding-top: 10%;
