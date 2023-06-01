@@ -70,14 +70,16 @@ form{
 }
 .distinto{width: 30%;
 max-height: 10%;}
-
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1
+}
 label{
     max-width: 95%;
     }
 p{
   max-height: 2%;
 }
-input[type=button] {
+input[type='button'] {
   background-color: black;
   color: white;
   border-radius: 4%;
@@ -200,7 +202,10 @@ input{
     height: 6%;
     min-height: 6%;
   }
-  
+  input[type="checkbox"]{
+    width: 14%;
+    height: 14%;
+  }
   .distinto{width: 64%;}
 label{
   font-size:large;
